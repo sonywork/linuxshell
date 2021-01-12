@@ -7,4 +7,5 @@ do
 done
 firewall-cmd --permanent --direct --add-rule ipv4 filter OUTPUT 2 -p udp -j DROP
 firewall-cmd --reload
+firewall-cmd --permanent --direct --get-all-rule
 
